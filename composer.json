@@ -1,0 +1,6 @@
+{
+    "require": {
+        "league/climate": "^3.2",
+        "team-reflex/discord-php": "dev-develop"
+    }
+}
