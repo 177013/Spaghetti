@@ -10,7 +10,7 @@ $startupTime = new DateTime();
 
 $console->info('Starting up...');
 
-/** Setup */
+# setup
 use Discord\DiscordCommandClient;
 $bot = new DiscordCommandClient([
     'token' => TOKEN,
@@ -32,9 +32,9 @@ $bot->on('ready', function ($bot) use ($console) {
     });
 });
 
-include 'commands/core.commands.php';
-#include 'commands/todo.commands.php';
-include 'commands/fun.commands.php';
+include 'commands/Core/core.commands.php';
+#include 'commands/Todo/todo.commands.php';
+include 'commands/Fun/fun.commands.php';
 #include 'commands/Location/location.commands.php';
 include 'commands/Food/food.commands.php';
 
